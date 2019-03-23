@@ -1,5 +1,8 @@
 header {
   background-color: #e24647;
+  display: flex;
+  align-items: center;
+  padding: 10px;
 }
 
 h1, a{
@@ -8,6 +11,10 @@ h1, a{
 
 h1 {
   font-size: 40px;
+}
+
+nav {
+  margin-left: auto;
 }
 
 a{
