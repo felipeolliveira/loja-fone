@@ -4,11 +4,14 @@ header {
   padding: 10px;
   color: #fff;
   overflow: hidden;
+  margin: 115px;
+  padding: 55px 60px 95px;
 }
 
 h1 {
   font-size: 40px;
   font-family: Arial, "Roboto", sans-serif;
+  text-transform: uppercase;
   float: left;
 }
 
