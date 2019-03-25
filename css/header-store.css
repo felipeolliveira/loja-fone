@@ -1,15 +1,7 @@
 .header-store {
-  background-color: #e24647;
   align-items: center;
-  width: 85%;
   color: #fff;
   overflow: hidden;
-  padding: 55px 60px 95px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
 }
 
 .header-store > .title {
@@ -27,7 +19,6 @@
 
 .action{
   font-family: "Segoe UI", "Roboto", Verdana, sans-serif;
-  text-decoration: none;
   color: inherit;
   margin-left: 60px;
 }

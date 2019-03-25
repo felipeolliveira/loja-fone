@@ -1,4 +1,4 @@
-.button {
+.button-store {
   display: inline-block;
   text-align: center;
   width: 210px;
@@ -9,5 +9,5 @@
   font-size: 20px;
   background-color: #252c41;
   color: #fff;
-  margin-left: 40px;
+  margin-right: 40px;
 }
