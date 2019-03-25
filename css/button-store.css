@@ -12,15 +12,8 @@
   margin-right: 40px;
 }
 
-.button-store-second {
-  display: inline-block;
-  box-sizing: border-box;
+.button-store.-second {
   background-color: transparent;
   border: 2px solid #fff;
-  width: 218px;
-  text-align: center;
-  color: #fff;
   line-height: 56px;
-  font-family: Arial, "Roboto", sans-serif;
-  font-size: 20px;
 }
