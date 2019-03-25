@@ -1,4 +1,4 @@
-header {
+.header-store {
   background-color: #e24647;
   align-items: center;
   width: 85%;
@@ -12,20 +12,20 @@ header {
   box-sizing: border-box;
 }
 
-h1 {
+.header-store > .title {
   font-size: 40px;
   font-family: Arial, "Roboto", sans-serif;
   text-transform: uppercase;
   float: left;
 }
 
-nav {
+.navigation {
   margin-left: auto;
   font-size: 21px;
   float: right;
 }
 
-a{
+.action{
   font-family: "Segoe UI", "Roboto", Verdana, sans-serif;
   text-decoration: none;
   color: inherit;
