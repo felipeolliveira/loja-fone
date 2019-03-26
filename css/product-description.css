@@ -1,0 +1,32 @@
+.product-description {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+  color: #fff;
+  padding-top: 45px;
+}
+
+.product-description > .title {
+  font-size: 25px;
+  margin-bottom: 100px;
+}
+
+.product-description > .ranking {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.product-description > .price {
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.product-description > .description {
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+.product-description > .more {
+  font-size: 18px;
+  color: #fff;
+  margin-bottom: 100px;
+}
