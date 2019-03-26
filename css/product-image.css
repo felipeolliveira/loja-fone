@@ -1,0 +1,12 @@
+.product-image {
+  width: 100%;
+  height: 547px;
+  background-color: #fff;
+  border-radius: 0 150px 150px 0;
+  transform: translateX(-61px);
+  text-align: right;
+}
+
+.product-image > .image {
+  width: 547px;
+}

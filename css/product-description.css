@@ -31,6 +31,10 @@
   margin-bottom: 100px;
 }
 
+.product-description > .more > .link{
+  color: #fff;
+}
+
 .product-description > .button {
   display: inline-block;
 }
