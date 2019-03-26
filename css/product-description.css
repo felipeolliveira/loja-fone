@@ -30,3 +30,7 @@
   color: #fff;
   margin-bottom: 100px;
 }
+
+.product-description > .button {
+  display: inline-block;
+}
