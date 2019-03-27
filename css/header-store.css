@@ -2,7 +2,7 @@
   align-items: center;
   color: #fff;
   overflow: hidden;
-  margin-bottom: 95px;
+  margin: 0 0 95px 60px;
 }
 
 .header-store > .title {
@@ -12,13 +12,13 @@
   float: left;
 }
 
-.navigation {
+.header-store > .navigation {
   margin-left: auto;
   font-size: 21px;
   float: right;
 }
 
-.navigation > .action{
+.header-store .action {
   font-family: "Segoe UI", "Roboto", Verdana, sans-serif;
   color: inherit;
   margin-left: 60px;

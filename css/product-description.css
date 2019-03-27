@@ -1,7 +1,6 @@
 .product-description {
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   color: #fff;
-  padding-top: 45px;
 }
 
 .product-description > .title {
@@ -9,30 +8,37 @@
   margin-bottom: 100px;
 }
 
-.product-description > .ranking {
+.product-description > .item {
   font-size: 20px;
   margin-bottom: 30px;
 }
 
-.product-description > .price {
-  font-size: 20px;
-  margin-bottom: 25px;
+.product-description > .item.-info {
+  width: 200px;
+  text-align: right;
 }
 
-.product-description > .description {
+.product-description > .item.-last {
+  margin-bottom: 70px;
+}
+
+.product-description .highlight {
+  text-transform: uppercase;
+  float: left;
+}
+
+.product-description > .text {
   font-size: 18px;
   line-height: 30px;
   margin-bottom: 20px;
 }
 
-.product-description > .more {
-  font-size: 18px;
-  color: #fff;
-  margin-bottom: 100px;
+.product-description > .text.-last {
+  margin-bottom: 0px;
 }
 
-.product-description > .more > .link{
-  color: #fff;
+.product-description .action {
+  color: inherit;
 }
 
 .product-description > .button {
