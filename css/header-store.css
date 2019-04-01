@@ -23,6 +23,23 @@
   font-family: "Segoe UI", "Roboto", Verdana, sans-serif;
   color: inherit;
   margin-left: 60px;
+  position: relative;
+}
+
+.header-store .action::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(150%);
+  transition: width 0.2s linear;
+}
+
+.header-store .action:hover::after {
+  width: 100%;
 }
 
 .header-store [type="search"] {
