@@ -5,6 +5,14 @@
   position: relative;
 }
 
+.wrap-product > .favorite {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(calc(-100% - 47px));
+  cursor: pointer;
+}
+
 .wrap-product > .buttons {
   position: absolute;
   margin-top: 70px;
