@@ -11,12 +11,23 @@
   color: #fff;
   margin-right: 35px;
   cursor: pointer;
+  transition: all 0.2s;
+}
+
+.button-store:hover {
+  background-color: #fff;
+  color: #252c41;
 }
 
 .button-store.-second {
   background-color: transparent;
   border: 2px solid #fff;
   line-height: 56px;
+}
+
+.button-store.-second:hover {
+  background-color: #fff;
+  color: #e24647;
 }
 
 .button-store > button,
