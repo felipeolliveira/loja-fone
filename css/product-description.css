@@ -21,6 +21,10 @@
   cursor: pointer;
 }
 
+.product-description > .item.-favorite:hover {
+  transform: translateX(calc(-100%)) scale(1.2);
+}
+
 .product-description > .item.-star {
   margin-bottom: 10px;
 }
@@ -28,6 +32,10 @@
 .product-description > .item.-star [src] {
   cursor: pointer;
   margin-right: 5px;
+}
+
+.product-description > .item.-star [src]:hover {
+  transform: scale(1.2);
 }
 
 .product-description > .item.-star + .item {
