@@ -17,6 +17,11 @@
   margin-bottom: 10px;
 }
 
+.product-description > .item.-star [src] {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
 .product-description > .item.-star + .item {
   margin-left: 7px;
 }
