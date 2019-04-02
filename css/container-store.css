@@ -19,9 +19,21 @@
   }
 }
 
+@media (max-width: 1235px) {
+  .container-store {
+    padding: 55px 0 195px;
+  }
+}
+
 @media (max-height: 950px) {
   .container-store {
     max-width: 1330px;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 620px) {
+  .container-store {
+    padding-bottom: 270px;
   }
 }

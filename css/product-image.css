@@ -10,3 +10,40 @@
 .product-image > .image {
   width: 500px;
 }
+
+@media (max-width: 1260px) {
+  .product-image {
+    padding: 0;
+    margin-right: 10%;
+  }
+
+  .product-image > .image {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .product-image {
+    display: block;
+    border-radius: 100px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-image {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 420px) {
+  .product-image {
+    padding: 20px 0;
+  }
+  .product-image > .image {
+    width: 300px;
+  }
+}
