@@ -72,6 +72,9 @@
 }
 
 @media (max-width: 1024px) {
+  .product-description > .title {
+    font-size: 32px;
+  }
   .product-description > .item.-favorite {
     top: -85px;
     left: 50%;
@@ -88,5 +91,11 @@
 
   .product-description > .item.-last {
     margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 380px) {
+  .product-description > .title {
+    font-size: 26px;
   }
 }
