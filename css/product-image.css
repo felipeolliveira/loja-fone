@@ -37,13 +37,14 @@
     width: 100%;
     border-radius: 0;
   }
+
+  .product-image > .image {
+    width: 100%;
+  }
 }
 
 @media (max-width: 420px) {
   .product-image {
     padding: 20px 0;
-  }
-  .product-image > .image {
-    width: 300px;
   }
 }
