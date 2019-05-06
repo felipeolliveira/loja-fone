@@ -21,6 +21,14 @@
   display: none;
 }
 
+.product-description .-active .icon {
+  display: none;
+}
+
+.product-description .-active .icon.-active {
+  display: block;
+}
+
 .product-description .icon:hover {
   transform: scale(1.2);
   transition: none;
@@ -34,14 +42,6 @@
   cursor: pointer;
 }
 
-.product-description > .item.-favorite.-active .icon {
-  display: none;
-}
-
-.product-description > .item.-favorite.-active .icon.-active {
-  display: block;
-}
-
 .product-description > .item.-star {
   margin-bottom: 10px;
 }
@@ -53,6 +53,10 @@
 
 .product-description > .item.-star + .item {
   margin-left: 7px;
+}
+
+.product-description .star {
+  display: inline-block;
 }
 
 .product-description > .item.-info {
