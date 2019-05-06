@@ -1,7 +1,8 @@
 const $favoriteIcon = document.querySelector(".-favorite");
 
 const handleClickFavoriteIcon = () => {
-  console.log("clique no coração");
+  $favoriteIcon.classList.toggle("-active");
+  console.log("teste");
 };
 
 $favoriteIcon.addEventListener("click", handleClickFavoriteIcon);

@@ -30,6 +30,10 @@
   cursor: pointer;
 }
 
+.product-description > .item.-favorite.-active {
+  background-color: #fff;
+}
+
 .product-description > .item.-star {
   margin-bottom: 10px;
 }
