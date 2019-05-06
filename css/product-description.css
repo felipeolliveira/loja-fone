@@ -17,6 +17,10 @@
   transition: transform 0.1s;
 }
 
+.product-description .icon.-active {
+  display: none;
+}
+
 .product-description .icon:hover {
   transform: scale(1.2);
   transition: none;
@@ -30,8 +34,12 @@
   cursor: pointer;
 }
 
-.product-description > .item.-favorite.-active {
-  background-color: #fff;
+.product-description > .item.-favorite.-active .icon {
+  display: none;
+}
+
+.product-description > .item.-favorite.-active .icon.-active {
+  display: block;
 }
 
 .product-description > .item.-star {
