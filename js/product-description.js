@@ -1,16 +1,27 @@
 const $favoriteIcon = document.querySelector(".-favorite");
 const $starsIcons = document.querySelectorAll(".star");
 
-console.log($starsIcons);
-
-const handleClickFavoriteIcon = () => {
+function handleClickFavoriteIcon() {
   $favoriteIcon.classList.toggle("-active");
-};
+}
+
+function removeStarsActives() {
+  $starsIcons.forEach(star => star.classList.remove("-active"));
+}
+
+function addStarsActives(clickIndex) {
+  $starsIcons.forEach((star, eachIndex) => {
+    if (eachIndex <= clickIndex) {
+      star.classList.add("-active");
+    }
+  });
+}
 
 $favoriteIcon.addEventListener("click", handleClickFavoriteIcon);
 
-$starsIcons.forEach(star => {
+$starsIcons.forEach((star, index) => {
   star.addEventListener("click", () => {
-    star.classList.toggle("-active");
+    removeStarsActives();
+    addStarsActives(index);
   });
 });
