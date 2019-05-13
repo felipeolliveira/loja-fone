@@ -1,8 +1,13 @@
 const $icons = document.querySelectorAll(".header-store .icon");
-const $searchBar = document.querySelector(".header-store .search");
+const $searchBar = document.querySelector(".search-bar");
 
-function handleClick() {
+function handleClick(event) {
+  event.preventDefault();
   $searchBar.classList.toggle("-active");
 }
 
-$icons.forEach(icon => icon.addEventListener("click", handleClick));
+$icons.forEach(icon =>
+  icon.addEventListener("click", () => {
+    handleClick(event);
+  })
+);
