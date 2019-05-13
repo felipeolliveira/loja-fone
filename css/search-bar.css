@@ -67,7 +67,7 @@
     display: none;
   }
 
-  .search-bar > [type="search"] {
+  .search-bar > .content {
     padding-left: 15px;
     border: none;
     color: #252c41;
