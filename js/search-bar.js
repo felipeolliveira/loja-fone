@@ -1,6 +1,6 @@
-const $icons = document.querySelectorAll(".search-bar .icon");
-const $content = document.querySelector(".search-bar .content");
 const $searchBar = document.querySelector(".search-bar");
+const $icons = $searchBar.querySelectorAll(".icon");
+const $content = $searchBar.querySelector(".content");
 
 function handleClick(event) {
   event.preventDefault();
