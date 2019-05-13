@@ -77,7 +77,7 @@
   .header-store {
     margin: 0 10px;
   }
-  .header-store > .navigation {
+  .header-store .action {
     display: none;
   }
 }

@@ -33,13 +33,18 @@
     position: absolute;
     top: 5px;
     left: 0;
-    transform: translateX(-88%);
+    transform: translateX(calc(-100% + 60px));
     transition: 0.4s ease;
     background-color: #fff;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .search-bar > .content {
+    width: 80vw;
+    max-width: 480px;
   }
 
   .search-bar.-active {
