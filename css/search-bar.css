@@ -1,8 +1,12 @@
+.search-bar {
+  display: inline-block;
+}
+
 .search-bar > .content {
   display: inline-block;
 }
 
-.search-bar > [type="search"] {
+.search-bar > .content {
   width: 328px;
   font-size: 21px;
   background-color: transparent;
@@ -13,14 +17,14 @@
   text-align: center;
 }
 
-.search-bar > [type="search"]::placeholder {
+.search-bar > .content::placeholder {
   font-family: "Segoe UI", "Roboto", Verdana, sans-serif;
   font-size: 21px;
   color: inherit;
 }
 
 .search-bar > .icon {
-  display: inline-block;
+  display: none;
 }
 
 @media (max-width: 955px) {
