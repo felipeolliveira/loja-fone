@@ -67,6 +67,7 @@
     display: block;
     top: 5px;
     right: 0;
+    z-index: 15;
   }
 
   .action-wrapper.-active > .menu {
@@ -77,16 +78,16 @@
 
   .action-wrapper > .actions {
     position: absolute;
-    top: 45px;
+    top: 0px;
     right: 0;
     width: 100%;
-    padding: 20px;
-    transform: translateX(105%);
+    padding: 50px 0 30px 0;
+    transform: translateY(-105%);
     background-color: #252c41;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
     transition: 0.5s ease;
-    z-index: 1;
+    z-index: 10;
   }
 
   .action-wrapper.-active > .actions {
