@@ -1,15 +1,16 @@
 const $searchBar = document.querySelector(".search-bar");
-const $icons = $searchBar.querySelectorAll(".icon");
+const $searchIcons = $searchBar.querySelectorAll(".icon");
 const $content = $searchBar.querySelector(".content");
 
-function handleClick(event) {
+function handleClickSearchBar(event) {
   event.preventDefault();
+  $actionWrapper.classList.remove("-active");
   $searchBar.classList.toggle("-active");
   if ($content.value) $content.value = "";
 }
 
-$icons.forEach(icon =>
+$searchIcons.forEach(icon =>
   icon.addEventListener("click", () => {
-    handleClick(event);
+    handleClickSearchBar(event);
   })
 );

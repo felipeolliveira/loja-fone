@@ -1,0 +1,111 @@
+.action-wrapper {
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.action-wrapper > .icons {
+  width: 100%;
+  display: none;
+  padding: 5px;
+  background-color: #fff;
+  text-align: left;
+  box-sizing: border-box;
+  border-radius: 25px;
+  transition: 0.4s linear;
+}
+
+.action-wrapper .icon {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.action-wrapper .icon.-close {
+  display: none;
+}
+
+.action-wrapper .action {
+  font-family: "Segoe UI", "Roboto", Verdana, sans-serif;
+  color: inherit;
+  margin-left: 60px;
+  padding-bottom: 8px;
+  position: relative;
+}
+
+.action-wrapper .action::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: center left;
+  transition: transform 0.2s linear;
+}
+
+.action-wrapper .action:hover::after {
+  transform: scaleX(1);
+}
+
+@media (max-width: 1235px) {
+  .action-wrapper .action {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .action-wrapper .action {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .action-wrapper > .links {
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 100%;
+    padding: 20px;
+    transform: translateX(110%);
+    background-color: #252c41;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
+    box-sizing: border-box;
+    transition: 0.5s ease;
+    z-index: 1;
+  }
+
+  .action-wrapper.-active > .links {
+    transform: translateX(0);
+  }
+
+  .action-wrapper > .icons {
+    position: absolute;
+    display: flex;
+    top: 5px;
+    right: 0;
+    transform: translateX(calc(100% - 60px));
+  }
+
+  .action-wrapper.-active > .icons {
+    background-color: #252c41;
+  }
+
+  .action-wrapper.-active .icon.-open {
+    display: none;
+  }
+
+  .action-wrapper.-active .icon.-close {
+    display: inline;
+  }
+  .action-wrapper .action {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    color: #fff;
+  }
+}

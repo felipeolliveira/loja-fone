@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/base.css" />
     <link rel="stylesheet" href="./css/container-store.css" />
     <link rel="stylesheet" href="./css/header-store.css" />
+    <link rel="stylesheet" href="./css/action-wrapper.css" />
     <link rel="stylesheet" href="./css/search-bar.css" />
     <link rel="stylesheet" href="./css/product-image.css" />
     <link rel="stylesheet" href="./css/wrap-product.css" />
@@ -32,10 +33,22 @@
             <input class="content" type="search" placeholder="Busca" />
             <input class="icon -open" type="image" src="./img/search.svg" />
             <input class="icon -close" type="image" src="./img/close.svg" />
-          </form action="">
-          <a class="action" href="#">Produtos</a>
-          <a class="action" href="#">Serviços</a>
-          <a class="action -cart" href="#">Carrinho(0)</a>
+          </form>
+          <div class="action-wrapper">
+            <figure class="icons">
+              <img class="icon -open" src="img/menu.svg" alt="icone de menu" />
+              <img
+                class="icon -close"
+                src="img/close-white.svg"
+                alt="icone para fechar"
+              />
+            </figure>
+            <div class="links">
+              <a class="action" href="#">Produtos</a>
+              <a class="action" href="#">Serviços</a>
+              <a class="action -cart" href="#">Carrinho(0)</a>
+            </div>
+          </div>
         </nav>
       </header>
 
@@ -151,7 +164,8 @@
     </div>
 
     <script src="js/home.js"></script>
-    <script src="js/product-description.js"></script>
     <script src="js/search-bar.js"></script>
+    <script src="js/action-wrapper.js"></script>
+    <script src="js/product-description.js"></script>
   </body>
 </html>
