@@ -1,10 +1,13 @@
 const $actionWrapper = document.querySelector(".action-wrapper");
-const $menuIcons = $actionWrapper.querySelectorAll(".icon");
+const $menuIcons = $actionWrapper.querySelector(".menu");
 
-function handleClickMenuIcons() {
+console.log($menuIcons);
+
+function handleClickMenuIcons(event) {
+  event.preventDefault();
   $actionWrapper.classList.toggle("-active");
 }
 
-$menuIcons.forEach(icon => {
-  icon.addEventListener("click", handleClickMenuIcons);
+$menuIcons.addEventListener("click", () => {
+  handleClickMenuIcons(event);
 });

@@ -1,28 +1,25 @@
 .action-wrapper {
   display: inline-block;
-  box-sizing: border-box;
 }
 
-.action-wrapper > .icons {
-  width: 100%;
+.action-wrapper > .menu {
+  font-family: "Segoe UI", "Roboto", Verdana, sans-serif;
+  font-size: 1rem;
+  line-height: 34px;
+  text-transform: uppercase;
+  padding-right: 10px;
+  color: #252c41;
   display: none;
-  padding: 5px;
-  background-color: #fff;
-  text-align: left;
-  box-sizing: border-box;
-  border-radius: 25px;
-  transition: 0.4s linear;
+  width: 90px;
+  background: #fff url("../img/menu.svg") no-repeat 15px center;
+  background-size: 24px 24px;
+  text-align: right;
+  border-radius: 25px 0 0 25px;
+  transition: 0.3s linear;
 }
 
-.action-wrapper .icon {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-.action-wrapper .icon.-close {
-  display: none;
+.action-wrapper .item {
+  display: inline-block;
 }
 
 .action-wrapper .action {
@@ -65,13 +62,26 @@
 }
 
 @media (max-width: 420px) {
-  .action-wrapper > .links {
+  .action-wrapper > .menu {
+    position: absolute;
+    display: block;
+    top: 5px;
+    right: 0;
+  }
+
+  .action-wrapper.-active > .menu {
+    background: #252c41 url("../img/close-white.svg") no-repeat 15px center;
+    background-size: 24px 24px;
+    color: #fff;
+  }
+
+  .action-wrapper > .actions {
     position: absolute;
     top: 45px;
     right: 0;
     width: 100%;
     padding: 20px;
-    transform: translateX(110%);
+    transform: translateX(105%);
     background-color: #252c41;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
@@ -79,33 +89,22 @@
     z-index: 1;
   }
 
-  .action-wrapper.-active > .links {
+  .action-wrapper.-active > .actions {
     transform: translateX(0);
   }
 
-  .action-wrapper > .icons {
-    position: absolute;
-    display: flex;
-    top: 5px;
-    right: 0;
-    transform: translateX(calc(100% - 60px));
+  .action-wrapper .item {
+    display: block;
   }
 
-  .action-wrapper.-active > .icons {
-    background-color: #252c41;
-  }
-
-  .action-wrapper.-active .icon.-open {
-    display: none;
-  }
-
-  .action-wrapper.-active .icon.-close {
-    display: inline;
-  }
   .action-wrapper .action {
     display: block;
     width: 50%;
     margin: 0 auto;
     color: #fff;
+  }
+
+  .action-wrapper .action::after {
+    transform-origin: center center;
   }
 }
