@@ -9,6 +9,7 @@
   transform: translate(-50%, -50%);
   box-sizing: border-box;
   padding: 55px 60px 195px 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 @media (max-width: 1470px), (max-height: 950px) {

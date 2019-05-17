@@ -16,7 +16,7 @@
   top: 0;
   left: 0;
   background-color: #fff;
-  box-shadow: inset -10px 0 10px rgba(0, 0, 0, 0.2);
+  box-shadow: inset -10px 0 10px rgba(0, 0, 0, 0.15);
 
   transform: translateX(-100%);
 }
