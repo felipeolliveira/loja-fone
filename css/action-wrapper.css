@@ -15,7 +15,6 @@
   background-size: 24px 24px;
   text-align: right;
   border-radius: 25px 0 0 25px;
-  transition: 0.3s linear;
 }
 
 .action-wrapper .item {
@@ -68,6 +67,8 @@
     top: 5px;
     right: 0;
     z-index: 15;
+
+    transition: 0.3s ease;
   }
 
   .action-wrapper.-active > .menu {
@@ -82,16 +83,18 @@
     right: 0;
     width: 100%;
     padding: 50px 0 30px 0;
-    transform: translateY(-105%);
     background-color: #252c41;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
     box-sizing: border-box;
-    transition: 0.5s ease;
     z-index: 10;
+
+    transform: translateY(-105%);
+    transition: 0.6s cubic-bezier(0.66, -0.65, 0.37, 1.61);
   }
 
   .action-wrapper.-active > .actions {
     transform: translateX(0);
+    transition: 0.5s ease;
   }
 
   .action-wrapper .item {
