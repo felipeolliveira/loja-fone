@@ -2,14 +2,14 @@
   display: inline-block;
   box-sizing: border-box;
   text-align: center;
-  width: 210px;
+  width: 200px;
   height: 60px;
   line-height: 60px;
   font-family: Arial, "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   background-color: #252c41;
   color: #fff;
-  margin-right: 35px;
+  margin-right: 12px;
   cursor: pointer;
   transition: all 0.2s linear;
 }
@@ -43,6 +43,14 @@
   border: none;
   background-color: inherit;
   text-decoration: inherit;
+}
+
+@media (max-width: 1260px) {
+  .button-store {
+    width: 210px;
+    font-size: 20px;
+    margin-right: 35px;
+  }
 }
 
 @media (max-width: 1024px) {
